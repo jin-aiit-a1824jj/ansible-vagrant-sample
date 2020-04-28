@@ -39,3 +39,6 @@ yum install jenkins
 
 yum install java-1.8.0-openjdk
 systemctl status jenkins
+
+ls /etc/cron.d
+less /etc/cron.d/ansible_yum-autoupdate 
