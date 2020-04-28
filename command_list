@@ -29,3 +29,7 @@ cat /home/foo/.ssh/id_rsa.pub
 less /etc/passwd
 less /home/user_a/.ssh/authorized_keys
 
+cd /etc/sudoers.d/
+ls
+less allow-all-group_a
+less allow-httpd-group_b
