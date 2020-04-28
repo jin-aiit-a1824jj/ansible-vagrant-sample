@@ -33,3 +33,6 @@ cd /etc/sudoers.d/
 ls
 less allow-all-group_a
 less allow-httpd-group_b
+
+yum list | grep -i jenkins
+yum install jenkins
