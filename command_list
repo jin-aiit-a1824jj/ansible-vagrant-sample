@@ -12,3 +12,7 @@ ansible-playbook -i ./inventory/hosts ./playbook.yml
 
 less playbook-role.yml
 ansible-playbook -i ./inventory/hosts ./playbook-role.yml
+
+sudo su -
+hostname hogehoge.fugafuga
+hostname
