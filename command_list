@@ -42,3 +42,5 @@ systemctl status jenkins
 
 ls /etc/cron.d
 less /etc/cron.d/ansible_yum-autoupdate 
+
+less /tmp/now
