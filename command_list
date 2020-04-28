@@ -10,6 +10,8 @@ ansible-playbook -i ./inventory/hosts ./playbook.yml
 cp /etc/httpd/conf.modules.d/00-mpm.conf /vagrant/ansible/templates/00-mpm.conf.j2
 ansible-playbook -i ./inventory/hosts ./playbook.yml
 
+less /etc/group
+
 less playbook-role.yml
 ansible-playbook -i ./inventory/hosts ./playbook-role.yml
 
