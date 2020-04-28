@@ -48,3 +48,15 @@ less /tmp/now
 
 sudo su -
 vi /etc/hosts
+
+ssh -l ec2-user -i xxx.pem ec2-xx-xx-xx-xx.xx-xxx-x.compute.amazonaws.com
+vi ~/.ssh/config
+chmod 600 config
+ssh xxx-xxx01
+
+ansible-playbook -i inventory/aws playbook-aws.yml 
+hostname
+sudo su - 
+less /etc/passwd
+less /etc/group
+ls /etc/sudoers.d
