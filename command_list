@@ -36,3 +36,6 @@ less allow-httpd-group_b
 
 yum list | grep -i jenkins
 yum install jenkins
+
+yum install java-1.8.0-openjdk
+systemctl status jenkins
