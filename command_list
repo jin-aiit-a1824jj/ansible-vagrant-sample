@@ -18,3 +18,14 @@ ansible-playbook -i ./inventory/hosts ./playbook-role.yml
 sudo su -
 hostname hogehoge.fugafuga
 hostname
+
+pip install passlib
+python -c "from passlib.hash import sha512_crypt; import getpass; print(sha512_crypt.using(rounds=5000).hash(getpass.getpass()))"
+sudo su -
+adduser foo
+su - foo
+ssh-keygen -t rsa
+cat /home/foo/.ssh/id_rsa.pub
+less /etc/passwd
+less /home/user_a/.ssh/authorized_keys
+
