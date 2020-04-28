@@ -1,6 +1,7 @@
 vagrant up
 vagrant halt
 vagrant ssh
+vagrant reload
 
 rpm -qa
 rpm -qa | grep httpd
@@ -44,3 +45,6 @@ ls /etc/cron.d
 less /etc/cron.d/ansible_yum-autoupdate 
 
 less /tmp/now
+
+sudo su -
+vi /etc/hosts
