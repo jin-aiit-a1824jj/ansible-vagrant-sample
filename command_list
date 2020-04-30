@@ -60,3 +60,16 @@ sudo su -
 less /etc/passwd
 less /etc/group
 ls /etc/sudoers.d
+
+ansible-galaxy install geerlingguy.mysql
+/home/vagrant/.ansible/roles/geerlingguy.mysql
+mysql -u root -p
+less /home/vagrant/.ansible/roles/geerlingguy.mysql/defaults/main.yml
+「
+systemctl status mysqld.service
+/var/log/mysqld.err: Permission denied
+journalctl -xe
+sudo service mysql start
+ansible-playbook -i ./inventory/hosts playbook-role.yml 
+sudo service mysql start && sudo find / -type s | grep mysqld.sock
+」
