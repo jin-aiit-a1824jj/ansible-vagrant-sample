@@ -48,3 +48,10 @@
           password: guestbookpass
           priv: "guestbook.*:ALL"
     - php
+    - git
+    - role: php-guestbook
+      db_host: localhost
+      db_name: guestbook
+      db_user: guestbook
+      db_pass: guestbookpass
+      tags: deploy

@@ -89,3 +89,6 @@ phpinfo();
 」
 http://localhost:20080
 
+http://127.0.0.1:20080/php-guestbook/
+ansible-playbook -i ./inventory/hosts playbook-role.yml --tags "deploy"
+
