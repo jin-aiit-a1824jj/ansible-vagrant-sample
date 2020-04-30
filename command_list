@@ -73,3 +73,19 @@ sudo service mysql start
 ansible-playbook -i ./inventory/hosts playbook-role.yml 
 sudo service mysql start && sudo find / -type s | grep mysqld.sock
 」
+
+sudo mysql -u root -p 
+hogehoge
+select Host, User, Password from mysql.user;
+
+php -v
+composer --version
+sudo su -
+cd /var/www/html/
+vi index.php
+「
+<?php
+phpinfo();
+」
+http://localhost:20080
+

@@ -47,3 +47,4 @@
           host: "%"
           password: guestbookpass
           priv: "guestbook.*:ALL"
+    - php
